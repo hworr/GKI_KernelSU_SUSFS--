@@ -33,6 +33,7 @@ runs:
         cat >> "${{ github.workspace }}/wild_gki.fragment" << 'EOF'
         # KernelSU Configuration
         CONFIG_KSU=y
+        CONFIG_KSU_SYSCALL_HOOK=y
         EOF
     
     - name: Extract KSU Version Info
